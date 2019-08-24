@@ -22,6 +22,9 @@
   <!-- Custom Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Merriweather:700&display=swap" rel="stylesheet">
 
+  <!-- Icon Libray -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
@@ -32,7 +35,7 @@
 
 
   <!-- Jumbotron -->
-  <div class="jumbotron jumbotron-fluid text-center mdb-color lighten-2 white-text" style="margin-bottom: 0; height: 100vh; background-image: url(assets/images/background.jpg);   
+  <div class="jumbotron jumbotron-fluid text-center mdb-color lighten-2 white-text" style="margin-bottom: 0; height: 100vh; background-image: url(assets/images/background2.jpg);   
     background-position: center; background-repeat: no-repeat; background-size: cover;">
     <div class="container">
       <h1 class="display-4" style="text-align: center; margin-top: 30vh; font-family: 'Merriweather', serif;"
@@ -83,8 +86,11 @@
               <img src="assets/images/profile.png" class="img-fluid rounded" alt="Responsive image"
                 style="display: inline-block; vertical-align: middle">
 
-              <!-- Resume Button -->
-              <button type="button" class="btn btn-lg btn-block btn-success" style="margin-top: 3vh; background-color: #ED6A5A; border-color: #ED6A5A">Resume</button>
+              <!-- Resume Button --> <a href="assets/files/resume.pdf" target="_blank">
+                <button type="button" class="btn btn-lg btn-block btn-success "
+                  style="margin-top: 3vh; background-color: #ED6A5A; border-color: #ED6A5A">
+                  <i class="fas fa-file"></i> Resume</button>
+              </a>
 
             </div>
 
@@ -168,7 +174,7 @@
               <!-- Salesforce Cert -->
               <div class="card" style="width: 18rem; float: left; margin-right: auto;">
                 <div class="card-body">
-                  <img class="card-img-top" src="assets/images/sfadmin.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="assets/images/sfcert.jpg" alt="Card image cap">
                   <h4 class="card-title" style="margin-top:2vh;">Salesforce</h4>
                   <h6 class="card-subtitle mb-2 text-muted">SF Administrator Certification</h6>
                   <p class="card-text">Some great stuff about my sf admin cert</p>
@@ -256,7 +262,9 @@
         <!-- Content -->
 
         <!-- Header -->
+
         <h1 style="text-align: center; margin-top: 5vh; margin-bottom: 2vh; color: #E6EBE0">Portfolio</h1>
+
 
         <div class="row" style="margin-top: 5vh; margin-bottom: 5vh;">
 
@@ -271,7 +279,11 @@
               <!-- Project 1 -->
               <div class="card" style="width: 18rem; float: left; margin-right: auto;">
                 <div class="card-body">
-                  <img class="card-img-top" src="assets/images/schedule.png" alt="Card image cap" href="">
+                  <div class="embed-responsive-16by9">
+                    <img class="card-img-top" src="assets/images/monitor-ccs.png" alt="Card image cap" href="">
+                    <!-- <iframe src="https://mhandler1991.github.io/Choo-Choo-Schedule/" style="overflow: hidden;"
+                      class="embed-responsive-item"></iframe> -->
+                  </div>
                   <h4 class="card-title" style="margin-top:2vh; color: #ED6A5A">Scheduler</h4>
                   <h6 class="card-subtitle mb-2 text-muted">Sub Title</h6>
                   <p class="card-text">Content</p>
@@ -281,7 +293,7 @@
               <!-- Project 2 -->
               <div class="card" style="width: 18rem; float: left; margin-right: auto;">
                 <div class="card-body">
-                  <img class="card-img-top" src="assets/images/giphy.png" alt="Card image cap" href="">
+                  <img class="card-img-top" src="assets/images/monitor-giphy.png" alt="Card image cap" href="">
                   <h4 class="card-title" style="margin-top:2vh; color: #ED6A5A">Giphy Search</h4>
                   <h6 class="card-subtitle mb-2 text-muted">Sub Title</h6>
                   <p class="card-text">Content</p>
@@ -291,8 +303,8 @@
               <!-- Project 3 -->
               <div class="card" style="width: 18rem; float: left; margin-right: auto;">
                 <div class="card-body">
-                  <img class="card-img-top" src="assets/images/parallel.png" alt="Card image cap" href="">
-                  <h4 class="card-title" style="margin-top:2vh; color: #ED6A5A" >Parallel</h4>
+                  <img class="card-img-top" src="assets/images/monitor-parallel.png" alt="Card image cap" href="">
+                  <h4 class="card-title" style="margin-top:2vh; color: #ED6A5A">Parallel</h4>
                   <h6 class="card-subtitle mb-2 text-muted">Sub Title</h6>
                   <p class="card-text">Content</p>
                 </div>
@@ -303,7 +315,15 @@
           </div>
 
           <!-- Spacing -->
-          <div class="col-sm-1"></div>
+          <div class="col-sm-1">
+
+          </div>
+
+
+          <a class="btn-floating btn-fb mx-1">
+            <i class="fab fa-github" href="https://github.com/mhandler1991"></i>
+          </a>
+
 
         </div>
 
@@ -453,7 +473,7 @@
           <h5 class="mb-1">Contact Me</h5>
         </li>
         <li class="list-inline-item">
-          <a href="#!" class="btn btn-danger btn-rounded">via Email!</a>
+          <a href="mailto:mhandler1991@gmail.com" class="btn btn-danger btn-rounded">via Email!</a>
         </li>
       </ul>
       <!-- Call to action -->
@@ -464,29 +484,17 @@
       <ul class="list-unstyled list-inline text-center">
         <li class="list-inline-item">
           <a class="btn-floating btn-fb mx-1">
-            <i class="fab fa-facebook-f"> </i>
+            <i class="fab fa-github" href="https://github.com/mhandler1991"></i>
           </a>
         </li>
-        <li class="list-inline-item">
-          <a class="btn-floating btn-tw mx-1">
-            <i class="fab fa-twitter"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="btn-floating btn-gplus mx-1">
-            <i class="fab fa-google-plus-g"> </i>
-          </a>
-        </li>
+
         <li class="list-inline-item">
           <a class="btn-floating btn-li mx-1">
-            <i class="fab fa-linkedin-in"> </i>
+            <i class="fab fa-linkedin-in" href="https://www.linkedin.com/in/handler1991/"> </i>
           </a>
         </li>
-        <li class="list-inline-item">
-          <a class="btn-floating btn-dribbble mx-1">
-            <i class="fab fa-dribbble"> </i>
-          </a>
-        </li>
+
+
       </ul>
       <!-- Social buttons -->
 
