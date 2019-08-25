@@ -213,3 +213,50 @@ h1 {
         left: 0%;
     }
 }
+
+
+/********************************/
+/* Links */
+/********************************/
+
+/* Unvisited Link */
+.al:link {
+    color: black;
+}
+
+/* Visited Link */
+.al:visited {
+    color: black;
+}
+
+/* Mouse over Link */
+.al:hover {
+    color: black;
+}
+
+/* Selected Link */
+.al:active {
+    color:black;
+}
+
+/* ***************************** */
+
+/* Unvisited Link */
+.ab:link {
+    color: grey;
+}
+
+/* Visited Link */
+.ab:visited {
+    color: grey;
+}
+
+/* Mouse over Link */
+.ab:hover {
+    color: grey;
+}
+
+/* Selected Link */
+.ab:active {
+    color:grey;
+}
