@@ -1,7 +1,39 @@
-new TypeIt('#welcomeTxt', {
-    speed: 150,
-    waitUntilVisible: true,
-    html: true
+$(document).ready(function () {
+
+  // ********************
+  // Typing Functionality
+  // ********************
+  // https://typeitjs.com/
+
+  new TypeIt('#welcomeTxt', {
+      speed: 150,
+      waitUntilVisible: true,
+      html: true
+    })
+    .type('Hello, I am Max')
+    .go();
+
+
+  // ********************
+  // Popover Functions
+  // ********************
+  // https://getbootstrap.com/docs/4.0/components/tooltips/
+
+  // HTML Popover
+  $(function () {
+    $('[data-toggle="html"]').tooltip()
   })
-  .type('Hello, my name is Maxwell Handler')
-  .go();
+  // CSS Popover
+  $(function () {
+    $('[data-toggle="css"]').tooltip()
+  })
+  // Javascript Popover
+  $(function () {
+    $('[data-toggle="js"]').tooltip()
+  })
+  // Node.Js Popover
+  $(function () {
+    $('[data-toggle="node"]').tooltip()
+  })
+
+});
