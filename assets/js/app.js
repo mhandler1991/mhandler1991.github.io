@@ -10,7 +10,7 @@ $(document).ready(function () {
       waitUntilVisible: true,
       html: true
     })
-    .type('Hello, I am Max')
+    .type('Hello, I am Maxwell Handler')
     .go();
 
 
