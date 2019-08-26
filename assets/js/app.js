@@ -6,7 +6,7 @@ $(document).ready(function () {
   // https://typeitjs.com/
 
   new TypeIt('#welcomeTxt', {
-      speed: 150,
+      speed: 75,
       waitUntilVisible: true,
       html: true
     })
@@ -37,3 +37,4 @@ $(document).ready(function () {
   })
 
 });
+
