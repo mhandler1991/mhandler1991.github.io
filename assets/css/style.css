@@ -79,6 +79,12 @@ h1 {
     background-color: #808080;
 }
 
+/* Dark Grey */
+.sk5 {
+    width: 50%;
+    background-color: #F2C14E;
+}
+
 .skillName {
     float: left;
     padding-left: 10px;
