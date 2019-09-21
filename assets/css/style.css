@@ -280,6 +280,25 @@ h1 {
 /* ***************************** */
 /* resume */
 
-.resume.hover {
+.resume:hover {
+    text-decoration: none;
+}
+
+/* ***************************** */
+/* General Links */
+
+.aa:hover {
+    text-decoration: none;
+}
+
+.aa:link {
+    text-decoration: none;
+}
+
+.aa:visited {
+    text-decoration: none;
+}
+
+.aa:active {
     text-decoration: none;
 }
