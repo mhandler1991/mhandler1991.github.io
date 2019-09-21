@@ -40,32 +40,34 @@ var repo = function () {
 
         if (res[i].name == project1) {
 
-          project1date = res[i].updated_at;
+          project1date = moment(res[i].updated_at).format('MMMM Do YYYY, h:mm:ss a');
           $('#project1date').text(project1date);
+
+          // moment().format("MMM Do YY");  
 
         } else if (res[i].name == project2) {
 
-          project2date = res[i].updated_at;
+          project2date = moment(res[i].updated_at).format('MMMM Do YYYY, h:mm:ss a');
           $('#project2date').text(project2date);
 
         } else if (res[i].name == project3) {
 
-          project3date = res[i].updated_at;
+          project3date = moment(res[i].updated_at).format('MMMM Do YYYY, h:mm:ss a');
           $('#project3date').text(project3date);
 
         } else if (res[i].name == project4) {
 
-          project4date = res[i].updated_at;
+          project4date = moment(res[i].updated_at).format('MMMM Do YYYY, h:mm:ss a');
           $('#project4date').text(project4date);
 
         } else if (res[i].name == project5) {
 
-          project5date = res[i].updated_at;
+          project5date = moment(res[i].updated_at).format('MMMM Do YYYY, h:mm:ss a');
           $('#project5date').text(project5date);
 
         } else if (res[i].name == project6) {
 
-          project6date = res[i].updated_at;
+          project6date = moment(res[i].updated_at).format('MMMM Do YYYY, h:mm:ss a');
           $('#project6date').text(project6date);
 
         }
