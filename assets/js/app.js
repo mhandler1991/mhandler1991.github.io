@@ -95,6 +95,7 @@ $(document).ready(function () {
     });
   }
 
+  // Run Rep Function to get Rep Specific Informaiton
   repo();
 
 });
