@@ -1,40 +1,80 @@
-$(document).ready(function () {
+// **************
+// Variables
+// **************
 
-  // ********************
-  // Typing Functionality
-  // ********************
-  // https://typeitjs.com/
+// Project 1 Variables
+var project1 = $("#project1").attr("data-name");
+var project1date;
 
-  new TypeIt('#welcomeTxt', {
-      speed: 75,
-      waitUntilVisible: true,
-      html: true
-    })
-    .type('Hello, I am Maxwell Handler')
-    .go();
+// Project 2 Variables
+var project2 = $("#project2").attr("data-name");
+var project2date;
+
+// Project 3 Variables
+var project3 = $("#project3").attr("data-name");
+var project3date;
+
+// Project 4 Variables
+var project4 = $("#project4").attr("data-name");
+var project4date;
+
+// Project 5 Variables
+var project5 = $("#project5").attr("data-name");
+var project5date;
+
+// Project 6 Variables
+var project6 = $("#project6").attr("data-name");
+var project6date;
+
+var repo = function () {
+  $.ajax({
+    url: "https://api.github.com/users/mhandler1991/repos",
+    jsonp: true,
+    method: "GET",
+    dataType: "json",
+    success: function (res) {
+      console.log(res);
+
+      // For Loop
+      for (i = 0; i < res.length; i++) {
+
+        if (res[i].name == project1) {
+
+          project1date = res[i].updated_at;
+          $('#project1date').text(project1date);
+
+        } else if (res[i].name == project2) {
+
+          project2date = res[i].updated_at;
+          $('#project2date').text(project2date);
+
+        } else if (res[i].name == project3) {
+
+          project3date = res[i].updated_at;
+          $('#project3date').text(project3date);
+
+        } else if (res[i].name == project4) {
+
+          project4date = res[i].updated_at;
+          $('#project4date').text(project4date);
+
+        } else if (res[i].name == project5) {
+
+          project5date = res[i].updated_at;
+          $('#project5date').text(project5date);
+
+        } else if (res[i].name == project6) {
+
+          project6date = res[i].updated_at;
+          $('#project6date').text(project6date);
+
+        }
 
 
-  // ********************
-  // Popover Functions
-  // ********************
-  // https://getbootstrap.com/docs/4.0/components/tooltips/
+      }
 
-  // HTML Popover
-  $(function () {
-    $('[data-toggle="html"]').tooltip()
-  })
-  // CSS Popover
-  $(function () {
-    $('[data-toggle="css"]').tooltip()
-  })
-  // Javascript Popover
-  $(function () {
-    $('[data-toggle="js"]').tooltip()
-  })
-  // Node.Js Popover
-  $(function () {
-    $('[data-toggle="node"]').tooltip()
-  })
+    }
+  });
+}
 
-});
-
+repo();
