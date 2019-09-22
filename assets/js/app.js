@@ -4,6 +4,20 @@ $(document).ready(function () {
   // Console Log the Document is ready...
   console.log("ready!");
 
+  // ********************
+  // Typing Functionality
+  // ********************
+  // https://typeitjs.com/
+
+  new TypeIt('#welcomeTxt', {
+      speed: 150,
+      waitUntilVisible: true,
+      html: true
+    })
+    .type('Hello, I am Maxwell Handler')
+    .go();
+
+
   // **************
   // Variables
   // **************
@@ -56,31 +70,31 @@ $(document).ready(function () {
             project1date = moment(res[i].updated_at).format('MMMM Do YYYY, h:mm:ss a');
             $('#project1date').text(project1date);
 
-          // Project 2 Variables
+            // Project 2 Variables
           } else if (res[i].name == project2) {
 
             project2date = moment(res[i].updated_at).format('MMMM Do YYYY, h:mm:ss a');
             $('#project2date').text(project2date);
 
-          // Project 3 Variables
+            // Project 3 Variables
           } else if (res[i].name == project3) {
 
             project3date = moment(res[i].updated_at).format('MMMM Do YYYY, h:mm:ss a');
             $('#project3date').text(project3date);
 
-          // Project 4 Variables
+            // Project 4 Variables
           } else if (res[i].name == project4) {
 
             project4date = moment(res[i].updated_at).format('MMMM Do YYYY, h:mm:ss a');
             $('#project4date').text(project4date);
 
-          // Project 5 Variables
+            // Project 5 Variables
           } else if (res[i].name == project5) {
 
             project5date = moment(res[i].updated_at).format('MMMM Do YYYY, h:mm:ss a');
             $('#project5date').text(project5date);
 
-          // Project 6 Variables
+            // Project 6 Variables
           } else if (res[i].name == project6) {
 
             project6date = moment(res[i].updated_at).format('MMMM Do YYYY, h:mm:ss a');
