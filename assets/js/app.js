@@ -69,37 +69,48 @@ $(document).ready(function () {
 
             project1date = moment(res[i].updated_at).format('MMMM Do YYYY, h:mm:ss a');
             $('#project1date').text(project1date);
+            // Console.log Project Result Name
+            console.log(res[i].name);
 
             // Project 2 Variables
           } else if (res[i].name == project2) {
 
             project2date = moment(res[i].updated_at).format('MMMM Do YYYY, h:mm:ss a');
             $('#project2date').text(project2date);
+            // Console.log Project Result Name
+            console.log(res[i].name);
 
             // Project 3 Variables
           } else if (res[i].name == project3) {
 
             project3date = moment(res[i].updated_at).format('MMMM Do YYYY, h:mm:ss a');
             $('#project3date').text(project3date);
+            // Console.log Project Result Name
+            console.log(res[i].name);
 
             // Project 4 Variables
           } else if (res[i].name == project4) {
 
             project4date = moment(res[i].updated_at).format('MMMM Do YYYY, h:mm:ss a');
             $('#project4date').text(project4date);
+            // Console.log Project Result Name
+            console.log(res[i].name);
 
             // Project 5 Variables
           } else if (res[i].name == project5) {
 
             project5date = moment(res[i].updated_at).format('MMMM Do YYYY, h:mm:ss a');
             $('#project5date').text(project5date);
+            // Console.log Project Result Name
+            console.log(res[i].name);
 
             // Project 6 Variables
           } else if (res[i].name == project6) {
 
             project6date = moment(res[i].updated_at).format('MMMM Do YYYY, h:mm:ss a');
             $('#project6date').text(project6date);
-
+            // Console.log Project Result Name
+            console.log(res[i].name);
           }
 
 
