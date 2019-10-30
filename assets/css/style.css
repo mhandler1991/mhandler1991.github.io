@@ -85,6 +85,18 @@ h1 {
     background-color: #F2C14E;
 }
 
+/* Yellow */
+.sk6 {
+    width: 50%;
+    background-color: rgb(0, 202, 175);
+}
+
+/* Yellow */
+.sk7 {
+    width: 25%;
+    background-color: rgb(185, 185, 184);
+}
+
 .skillName {
     float: left;
     padding-left: 10px;
